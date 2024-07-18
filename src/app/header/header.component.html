@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/']"><img class="site-logo" width="70px" src="../../assets/logo.png"
+          alt="Logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item" *ngFor="let category of categories">
+            <a class="nav-link text-white" [routerLink]="['/category', category]">{{ category | titlecase}}</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" [routerLink]="['/cart']">
+              <h3 class="bi bi-cart-fill d-inline"></h3><span class="badge bg-primary cart-count">{{ totalQuantity
+                }}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
