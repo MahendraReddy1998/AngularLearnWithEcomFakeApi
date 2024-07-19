@@ -1,6 +1,7 @@
 # EcomLearnFakeApi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Did this as part of my Angular Learning, with fake https://fakestoreapi.com fake api's this site having basic ecom site flow, hosted using netlify https://firstecomlearn.netlify.app/
 
 ## Development server
 
